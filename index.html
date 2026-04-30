@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product From</title>
+</head>
+<body>
+    <form id="productForm">
+      <h2>Add Product</h2>
+
+      <!-- Product Name -->
+      <label>Product Name</label>
+      <input type="text" name="name" />
+      <p class="error" id="nameError"></p>
+
+      <!-- Description -->
+      <label>Product Description</label>
+      <textarea name="description"></textarea>
+      <p class="error" id="descError"></p>
+
+      <!-- Category -->
+      <label>Category</label>
+      <select name="category">
+        <option value="">Select Category</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="food">Food</option>
+      </select>
+      <p class="error" id="catError"></p>
+
+      <!-- Price -->
+      <label>Price</label>
+      <input type="number" name="price" />
+      <p class="error" id="priceError"></p>
+
+      <!-- Checkbox -->
+      <label>
+        <input type="checkbox" name="isPublish" />
+        Publish Product
+      </label>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
